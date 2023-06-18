@@ -1,0 +1,7 @@
+{"x":{"subject_regexp":"^sub-.*$",
+"DummyScanPositionInASL4D":[2],
+"Q":{"bUseBasilQuantification":1},
+"external":{"bAutomaticallyDetectFSL":false}
+"FSLdir":"/shared/centos7/fsl/6.0.6.2"
+"modules":{"asl":{"DummyScanPositionInASL4D":2,"M0PositionInASL4D":1}},
+}}
