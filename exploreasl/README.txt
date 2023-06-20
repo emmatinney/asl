@@ -10,3 +10,22 @@ Explore asl is used through matlab. These instructions are how to use on the dis
 - In dataPar.json, we set the dummyscan, we tell it to use Basil (FSL's version of ASL processing), we tell it where to find the FSL dir.
 - in sourcestructure.json, we identify the sourcedata file structure. So, we are telling it where to find the ASL raw dir and the T1 raw dir.
 - in studypar.json, we identify parameters of the asl sequence. We tell it the labeling duration, the post labeling delay, the M0 and dummy scan position, that our sequence is PCASL, and the order of the ASL labeling.
+OUTPUTS
+-population folder contains normalized data to MNI template
+Derivatives/ExploreASL/Population/ASLCheck/
+	- images aligned to t1
+	- _pWM check contours of white matter and CBF images
+	- go through CBF (Tra_qCBF) images 
+Derivatives/ExploreASL/Population/MotionASL
+	- check images without motion and keep adding more volumes with more motion. quality will degrade with the rows
+Derivatives/ExploreASL/Population/Stats/
+	-results calculated for a given atlas 
+	- CoV - co efficient of variation, when blood doesn't reach the brain 
+	- mean CBF across all voxels
+	- PVC 0 or PVC 2, with or without partial volume correction
+Different atlases:
+	- edit dataPar.json, add {"x":{
+   	 "S": {"Atlases": 		["TotalGM","TotalWM","DeepWM","Hammers","HOcort_CONN","HOsub_CONN","Mindboggle_OASIS_DKT31_CMA"]}
+}}
+Delete /lock/xASL_module_population.
+Run ExploreASL('/work/cnelab/TECHS/MRI', 0, [0 0 1]) - will rerun population module
