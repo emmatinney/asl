@@ -1,4 +1,4 @@
-# Preprocessing using EXPLORE ASL
+#Preprocessing using EXPLORE ASL
 https://exploreasl.github.io/Documentation/1.10.0/
 Email Jan if you have issues:j.petr@hzdr.de
 ## Explore asl is used through matlab. These instructions are how to use on the discovery cluster at Northeastern University.
