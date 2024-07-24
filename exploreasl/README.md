@@ -1,4 +1,4 @@
-Preprocessing using EXPLORE ASL
+##Preprocessing using EXPLORE ASL
 https://exploreasl.github.io/Documentation/1.10.0/
 Email Jan if you have issues:j.petr@hzdr.de
 Explore asl is used through matlab. These instructions are how to use on the discovery cluster at Northeastern University.
@@ -11,7 +11,7 @@ Explore asl is used through matlab. These instructions are how to use on the dis
 - In dataPar.json, we set the dummyscan, we tell it to use Basil (FSL's version of ASL processing), we tell it where to find the FSL dir.
 - in sourcestructure.json, we identify the sourcedata file structure. So, we are telling it where to find the ASL raw dir and the T1 raw dir.
 - in studypar.json, we identify parameters of the asl sequence. We tell it the labeling duration, the post labeling delay, the M0 and dummy scan position, that our sequence is PCASL, and the order of the ASL labeling.
-Outputs
+##Outputs
 -population folder contains normalized data to MNI template
 Derivatives/ExploreASL/Population/ASLCheck/
 	- images aligned to t1
