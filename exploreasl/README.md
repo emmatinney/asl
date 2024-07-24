@@ -12,7 +12,7 @@ Explore asl is used through matlab. These instructions are how to use on the dis
 - in sourcestructure.json, we identify the sourcedata file structure. So, we are telling it where to find the ASL raw dir and the T1 raw dir.
 - in studypar.json, we identify parameters of the asl sequence. We tell it the labeling duration, the post labeling delay, the M0 and dummy scan position, that our sequence is PCASL, and the order of the ASL labeling.
 ## Outputs
--population folder contains normalized data to MNI template
+- population folder contains normalized data to MNI template
 Derivatives/ExploreASL/Population/ASLCheck/
 	- images aligned to t1
 	- _pWM check contours of white matter and CBF images
